@@ -1,0 +1,31 @@
+.doing-section {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 120px;
+    }
+
+    &__title {
+        margin-bottom: 72px;
+    }
+}
+
+.title {
+    font-weight: 700;
+    color: var(--dark-color);
+    font-size: 36px;
+}
+
+.doing-list {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+}

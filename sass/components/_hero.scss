@@ -1,0 +1,38 @@
+.hero-section {
+    background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)), url(../images/home/people-office\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--primary-brand-color);
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    &__title {
+        font-weight: 700;
+        color: var(--white-bg);
+        font-size: 56px;
+    }
+    &__button {
+        margin-top: 48px;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: var(--primary-brand-color);
+    border-radius: 4px;
+    color: var(--white-bg);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+.button:hover, .button:focus {
+    background-color: var(--pressed-state-color);
+}
