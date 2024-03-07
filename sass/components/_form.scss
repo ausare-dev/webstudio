@@ -19,6 +19,9 @@
     top: 55%;
     transform: translate(-50%, -50%);
     height: 584px;
+    @media screen and (max-width:767px) {
+        width: 392px;
+    }
     width: 408px;
     background-color: var(--white-bg);
     border-radius: 4px;

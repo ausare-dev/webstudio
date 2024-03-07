@@ -1,5 +1,8 @@
 .doing-section {
-
+    display: none;
+    @media  screen and (min-width:$desktop) {
+        display: block;
+    }
     &__container {
         display: flex;
         flex-direction: column;
