@@ -363,6 +363,20 @@
         function LogBackdropClick() {
             console.log("this click");
         }
+        const refs_m = {
+            openModalBtnM: document.querySelector("[data-open-modal-m]"),
+            closeModalBtnM: document.querySelector("[data-close-modal-m]"),
+            backdropM: document.querySelector("[data-backdrop-m]"),
+        };
+        refs_m.openModalBtnM.addEventListener('click', toggleModalM);
+        refs_m.closeModalBtnM.addEventListener('click', toggleModalM);
+        refs_m.backdropM.addEventListener('click', LogBackdropClickM);
+        function toggleModalM() {
+            refs_m.backdropM.classList.toggle("mobile-menu_is-hidden");
+        }
+        function LogBackdropClickM() {
+            console.log("this click");
+        }
     </script>
 </body>
 
