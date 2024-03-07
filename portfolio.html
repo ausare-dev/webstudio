@@ -22,10 +22,9 @@
             <nav class="header__nav nav">
                 <a href="/" class="header__logo logo"><span class="logo__web">WEB</span>STUDIO</a>
                 <ul class="nav__page">
-                    <li class="nav__item page"><a class="page__link" href="./index.html">Studio</a>
+                    <li class="nav__item page"><a class="page__link page__link_active" href="./index.html">Studio</a>
                     </li>
-                    <li class="nav__item page"><a class="page__link page__link_active"
-                            href="./portfolio.html">Portfolio</a></li>
+                    <li class="nav__item page"><a class="page__link" href="./portfolio.html">Portfolio</a></li>
                     <li class="nav__item page"><a class="page__link" href="">Contacts</a></li>
                 </ul>
             </nav>
@@ -35,6 +34,59 @@
                 <li class="connection__item"><a class="connection__link" href="tel:+70001111111">+7 (000) 111-11-11</a>
                 </li>
             </ul>
+            <button type="button" class="header__button button-menu" data-open-modal-m>
+                <svg class="icon-menu">
+                    <use href="./images/home/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu mobile-menu_is-hidden" data-backdrop-m>
+                <div class="mobile-menu__container">
+                    <nav class="mobile-menu__nav-mobile nav-mobile">
+                        <ul class="nav-mobile__page">
+                            <li class="nav-mobile__item"><a class="nav-mobile__link nav-mobile__link_active"
+                                    href="./index.html">Studio</a>
+                            </li>
+                            <li class="nav-mobile__item"><a class="nav-mobile__link"
+                                    href="./portfolio.html">Portfolio</a></li>
+                            <li class="nav-mobile__item"><a class="nav-mobile__link" href="">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <ul class="mobile-menu__connection connection-mobile">
+                            <li class="connection-mobile__item"><a
+                                    class="connection-mobile__link connection-mobile__link_mail"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="connection-mobile__item"><a
+                                    class="connection-mobile__link connection-mobile__link_tel"
+                                    href="tel:+70001111111">+7 (000) 111-11-11</a>
+                            </li>
+                        </ul>
+                        <ul class="contacts-list contacts-list_mobile">
+                            <li class="contacts-list__item contacts-list__item_mobile"><a class="contacts-list__link"
+                                    href=""><svg class="button-icon">
+                                        <use href="./images/home/symbol-defs.svg#icon-instagram"></use>
+                                    </svg></a></li>
+                            <li class="contacts-list__item contacts-list__item_mobile"><a class="contacts-list__link"
+                                    href=""><svg class="button-icon">
+                                        <use href="./images/home/symbol-defs.svg#icon-twitter"></use>
+                                    </svg></a></li>
+                            <li class="contacts-list__item contacts-list__item_mobile"><a class="contacts-list__link"
+                                    href=""><svg class="button-icon">
+                                        <use href="./images/home/symbol-defs.svg#icon-facebook"></use>
+                                    </svg></a></li>
+                            <li class="contacts-list__item contacts-list__item_mobile"><a class="contacts-list__link"
+                                    href=""><svg class="button-icon">
+                                        <use href="./images/home/symbol-defs.svg#icon-linkedin"></use>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                    <button class="button-close" data-close-modal-m>
+                        <svg class="icon-close">
+                            <use href="./images/home/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
     <main>
